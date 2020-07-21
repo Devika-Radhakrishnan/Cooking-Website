@@ -174,26 +174,25 @@ input[type='submit']:active {
   margin-top: 30px;
 }
 .logo-black{
-  display: none;
     height: 50px;
   width: auto;
   float: left;
-  margin-top: 5px;
-  
+  margin: 5px 0 ;
+  display: none;
 }
 
 .main-nav {
   float: right;
   list-style: none;
   text-decoration: none;
-  margin-top: 55px;
+  /* margin-top: 55px; */
 }
 
 .main-nav li {
   color: white;
   display: inline-block;
   margin-left: 20px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 10px 10px;
 }
 
@@ -221,40 +220,36 @@ input[type='submit']:active {
   transition: border-bottom 0.2s;
 }
 
-.main-nav {
-
-  margin-top: 15px;
-}
-
-/* Sticky Navbar */
-.sticky{
-  position:fixed;
-  top:0;
-  width:100%;
- background-color: rgb(144 137 137 / 85%);
-}
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-  color:#555;
-  padding: 8px 0px;
-  -moz-transition: border-bottom 0.2s;
-  -ms-transition: border-bottom 0.2s;
-  -o-transition: border-bottom 0.2s;
-}
-.sticky .logo-black{
-  display: block;
-}
-.sticky .logo{
-  display: none;
-}
-
 .col-content p {
   font-size: 90%;
   margin-right: 20px;
   line-height: 145%;
   text-align: left;
 }
-/**/
+/*sticky nav*/
+.sticky{
+  position: fixed;
+  top:0px;
+  left :0px;
+  width:100%;
+  background-color: #fcfcfc;
+  box-shadow: 0 2px 2px rgb(175, 170, 170);
+}
+.main-nav {
+  margin-top: 18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color:#555;
+  padding: 16px 0;
+}
+.sticky .logo{
+  display: none;
+}
+.sticky .logo-black{
+  display: block;
+}
+
 /* ===Section-icon-logo */
 
 .ion-logo {
